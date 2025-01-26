@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Uni Sans Heavy CAPS;
+  src: url(https://cdn.jsdelivr.net/gh/JoshMerlino/photoncss@38f452d061edcb364452c165ae475d51d2afb393/fonts/UniSansHeavyCaps/3029259ef4f4389d799fe57da6f29158.woff2) format("woff2")
+}
+.ReactDiscordInvite--root.palette-dark {
+  background: #2f3136;
+  color: #fff
+}
+.ReactDiscordInvite--root.palette-dark .ReactDiscordInvite--title, .ReactDiscordInvite--root.palette-dark strong {
+  color: #b9bbbe
+}
+.ReactDiscordInvite--root.palette-light {
+  background: #f2f3f5;
+  color: #060607
+}
+.ReactDiscordInvite--root.palette-light .ReactDiscordInvite--title, .ReactDiscordInvite--root.palette-light strong {
+  color: #4f5660
+}
+.ReactDiscordInvite--root {
+  border-radius: .375rem;
+  font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin: .5rem;
+  min-width: 400px;
+  padding: 1rem
+}
+@media (min-width:500px) {
+  .ReactDiscordInvite--root {
+    width: 432px
+  }
+}
+.ReactDiscordInvite--root:not(.flat) {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.ReactDiscordInvite--root h5.ReactDiscordInvite--title {
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  border: 0;
+  cursor: default;
+  flex: 1 1;
+  font-family: Ginto, Uni Sans Heavy CAPS, Helvetica Neue, Helvetica, Roboto, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: .75rem;
+  font-style: inherit;
+  font-weight: 700;
+  forced-color-adjust: none;
+  line-height: 1rem;
+  list-style: none;
+  margin: 0 0 .75rem;
+  overflow: hidden;
+  padding: 0;
+  text-indent: 0;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: auto
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer, .ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--servericon {
+  cursor: default;
+  line-height: 1;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--servericon {
+  border-radius: 15px;
+  height: 50px;
+  margin: 0 1rem 0 0;
+  position: relative;
+  width: 50px
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer {
+  align-items: stretch;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  justify-content: center;
+  line-height: 1;
+  margin: 0 10px 0 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer .ReactDiscordInvite--servername {
+  cursor: default;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 0 0 2px;
+  min-width: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer .ReactDiscordInvite--membercount {
+  font-size: .875rem;
+  line-height: 1rem;
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer .ReactDiscordInvite--membercount span {
+  cursor: default;
+  line-height: 1rem;
+  margin: 0 .5rem 0 .75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer .ReactDiscordInvite--membercount span:before {
+  background-color: #747f8d;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: -12px;
+  position: absolute;
+  top: 4px;
+  width: 8px
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--textlayer .ReactDiscordInvite--membercount span:first-child:before {
+  background-color: #3ba560
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  align-items: center;
+  align-self: center;
+  background-color: rgb(59 165 96/var(--tw-bg-opacity));
+  border-radius: .125rem;
+  box-sizing: border-box;
+  color: rgb(255 255 255/var(--tw-text-opacity));
+  cursor: pointer;
+  display: flex;
+  flex-basis: 100%;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  justify-content: center;
+  line-height: 1.25rem;
+  margin-top: .5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  overflow: hidden;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: relative;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink:focus, .ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 132 76/var(--tw-bg-opacity))
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 107 62/var(--tw-bg-opacity))
+}
+@media (min-width:500px) {
+  .ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink {
+    flex-basis: auto;
+    margin-top: 0
+  }
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink.ReactDiscordInvite--botinvite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 101 242/var(--tw-bg-opacity))
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink.ReactDiscordInvite--botinvite:focus, .ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink.ReactDiscordInvite--botinvite:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 72 239/var(--tw-bg-opacity))
+}
+.ReactDiscordInvite--root .ReactDiscordInvite--datalayer .ReactDiscordInvite--joinlink.ReactDiscordInvite--botinvite:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 58 238/var(--tw-bg-opacity))
+}
+/*# sourceMappingURL=554.6fbe9ec0.chunk.css.map*/

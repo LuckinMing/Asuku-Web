@@ -1,9 +1,17 @@
+<!--
+ * @Author: Becky Ming LuckinMing@163.com
+ * @Date: 2025-01-27 14:25:07
+ * @LastEditors: Becky Ming LuckinMing@163.com
+ * @LastEditTime: 2025-01-27 16:10:03
+ * @FilePath: \Asuku-Web\Download\index.html
+ * @Description: Default settings, please set `customMade`, open koroFileHeader to view configuration: https://github.com/OBKoro1/koro1FileHeader/wiki/Configuration
+-->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>下载页面</title>
+<title>Download Page</title>
 <style>
   body {
   font-family: 'Arial', sans-serif;
@@ -15,11 +23,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
- 
 }
 
   .download-container {
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,9 +55,24 @@
 </head>
 <body>
 <div class="download-container">
-  <h1>下载我们的应用</h1>
-  <button class="download-button">下载</button>
-  <p>立即下载并体验我们的应用，让您的生活更加便捷。</p>
+  <h1>Download Client</h1>
+  <a href="https://github.com/Asuku-Web/Asuku-Web/releases/download/v1.0.0/Asuku-Web-v1.0.0.apk" class="download-button">Download</a>
+  <br>
+  <p>copyright by Becky Ming</p>
+  <p>Asuku-Web</p>
+  <p id="location">Fetching location...</p>
+</br>
 </div>
+<script>
+  fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('location').innerText = `Your location: ${data.city}, ${data.region}, ${data.country_name}`;
+    })
+    .catch(error => {
+      document.getElementById('location').innerText = 'Unable to fetch location';
+      console.error('Error fetching location:', error);
+    });
+</script>
 </body>
 </html>

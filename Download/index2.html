@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://acgurl.mbl1314.com/acgurl.php); /* 替换为你的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* 半透明白色覆盖 */
+            transition: filter 0.3s; /* 添加过渡效果 */
+        }
+
+        .blurred {
+            filter: blur(5px); /* 应用高斯模糊 */
+        }
+
+        .download-container {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px ;
+        text-align: center;
+    }
+    h1 {
+    color: #333;
+    }
+  .download-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  p {
+    color: #666;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="download-container">
+  <h1>Download Client</h1>
+  <a href="https://github.com/Asuku-Web/Asuku-Web/releases/download/v1.0.0/Asuku-Web-v1.0.0.apk" class="download-button">Download</a>
+  <br>
+  <p>copyright by Becky Ming</p>
+  <p>Asuku-Web</p>
+  <p id="location">Fetching location...</p>
+</br>
+</div>
+<script>
+  fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('location').innerText = `Your location: ${data.city}, ${data.region}, ${data.country_name}`;
+    })
+    .catch(error => {
+      document.getElementById('location').innerText = 'Unable to fetch location';
+      console.error('Error fetching location:', error);
+    });
+</script>
+</body>
+</html>

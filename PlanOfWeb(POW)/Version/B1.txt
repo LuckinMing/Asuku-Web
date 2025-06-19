@@ -1,9 +1,0 @@
-<UpdateLog>-B1
-[NEW]
-1.update New Base(UI,API,DB)
-2.update New Website Styles（UI,Notis）
-
-[STAFF]
-1.Establishing a distribution system
-2.Create a Discord group that staff can moderate
-
